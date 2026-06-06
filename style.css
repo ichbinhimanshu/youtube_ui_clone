@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+body{
+    background-color: #0F0F0F;
+    overflow-x: hidden;
+}
+
+i{
+    color:white
+}
+
+
+nav{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.one, 
+.two, 
+.three{
+    display: flex;
+    align-items: center;
+}
+
+.oneb1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.oneb1:hover{
+    background-color: #212121;
+}
+.oneb1 i{
+    font-size: 20px;
+}
+
+.one img{
+    height: 61px;
+    cursor: pointer;
+}
+
+
+.two input{
+    width: 535px;
+    height: 40px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #ffffff14;
+    font-size: 15px;
+    padding-left: 15px;
+    color: #757575;
+    background-color: transparent;
+}
+.two input:focus{
+    outline: none;
+    border: 1px #1C62B9 solid;
+}
+
+.twob1{
+    height: 40px;
+    width: 65px;
+    border-radius: 0 20px 20px 0;
+    border: 1px solid #ffffff14;
+    border-left: none;
+    background-color: #ffffff14;
+    cursor: pointer;
+}
+.twob1 i{
+    font-size: 20px;
+}
+
+.twob2{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 15px;
+    border: none;
+    background-color: #ffffff14;
+    cursor: pointer;
+}
+.twob2:hover{
+    background-color: #212121;
+}
+
+.twob2 img{
+    filter: invert(1);
+    width: 22px;
+}
+
+.three button{
+    height: 40px;
+    background-color: transparent;
+}
+
+.threeb1{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 7px;
+    border: none;
+    cursor: pointer;
+}
+.threeb1 i{
+    font-size: 16px;
+}
+
+.threeb2{
+    width: 90px;
+    height: 35px;
+    border-radius: 20px;
+    color: #6d9bd6;
+    border: 1px solid #3F3F3F;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
+.threeb2:hover{
+    background-color: #263850;
+}
+.threeb2 i{
+    font-size: 20px;
+    color: #6d9bd6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    display: flex;
+}
+
+.leftsec{
+    flex: 0 0 240px;
+    width: 240px;
+    height: calc(100vh - 56px);
+    overflow-y: hidden;
+    color: white;
+    margin-top: 7px;
+}
+.leftsec:hover{
+    overflow-y: auto;
+}
+
+/* ============================================================================================= */
+.leftsec::-webkit-scrollbar{width: 6px;}
+.leftsec::-webkit-scrollbar-track{background: transparent;margin-top: 5px;}
+.leftsec::-webkit-scrollbar-thumb{background: #717171;border-radius: 5px;}
+.leftsec::-webkit-scrollbar-thumb:hover{background: #909090;}
+/* ============================================================================================= */
+
+.lsbox{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 16px 20px;
+    font-size: 14px;
+    border-bottom: 1.5px solid #272727;
+}
+
+.ls1{
+    padding: 5px 0 10px 20px;
+}
+.ls11{
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    height: 40px;
+    width: 200px;
+    gap: 24px;
+    padding-left: 7px;
+    border: none;
+    cursor: pointer;
+}
+.ls11:hover{
+    background-color: #272727;
+}
+.ls11 i{
+    font-size: 20px;
+}
+.ls11 img{
+    filter: invert(1);
+}
+
+
+
+
+
+
+.ls21{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding-left: 14px;
+    width: 180px;
+}
+
+
+
+
+
+.ls3{
+    padding-bottom: 10px;
+}
+.ls31 .ls11 img{
+    width: 25px;
+}
+.ls31 h3{
+    padding-left: 9px;
+    margin-bottom: 5px;
+    cursor: default;
+}
+.ls31{
+    cursor: pointer;
+}
+
+
+
+
+.ls4{
+    display: flex;
+    padding: 12px 0px 12px 20px;
+    font-size: 14px;
+}
+
+
+
+
+.ls610{
+    padding: 15px 0 0px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 218px;
+    gap: 1px 8px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #bdbaba;
+    cursor: pointer;
+}
+.ls211{
+    cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+.rightsec{
+    flex: 1;
+}
+
+.tagsec{
+    height: 56px;
+    width: calc(100vw - 245px);
+    display: flex;
+    gap: 12px;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+}
+.sec{
+    height: 32px;
+    background-color: #272727;
+    color: #F1F1F1;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 0 13px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.videoseccover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.videosec{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    row-gap: 10px;
+    width: 100%;
+    max-width: 2950px;
+    margin: 0px 13px;
+}
+
+/* ====================================================================================================== */
+@media (max-width: 1991px){
+    .videosec{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+/* ====================================================================================================== */
+
+.covering{
+    padding: 12px;
+    border-radius: 12px;
+    display: inline-block;
+}
+.covering:hover{
+    background-color: #2E1E18;
+}
+.completebox{
+    /* width: 398px; */
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.videobox{
+    width: 100%;
+    aspect-ratio: 16/9;
+    display: flex;
+    border-radius: 12px;
+}
+.videobox video{
+    border-radius: 12px;
+}
+
+.text{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.text1{
+    display: flex;
+    gap: 10px;
+    color: #AAAAAA;
+    font-size: 14px;
+
+}
+.text h3{
+    color: #FAE8E0;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+.channellogo{
+    height: 36px;
+    width: 36px;
+    
+    background-size: cover;
+    border-radius: 50%;
+
+    flex-shrink: 0;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.channel{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.verified{
+    width: 14px;
+    height: 14px;
+}
+.boxmenu{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+.boxmenu:hover{
+    background-color: #574B46;
+    cursor: pointer;
+}
