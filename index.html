@@ -17,7 +17,7 @@
 
         <div class="one">
         <button class="oneb1"><i class="fa-solid fa-bars"></i></button>
-        <img src="img/logo.webp">
+        <img class="ytlogo" src="img/logo.webp">
         </div>
 
         <div class="two">
@@ -28,6 +28,32 @@
 
         <div class="three">
         <button class="threeb1"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+        <div class="popup">
+            <div class="pop"><i class="fa-regular fa-moon"></i></div>
+            <div class="pop" style="white-space: nowrap;">Appearance: <span class="themetext">Dark</span></div>
+            <div class="pop"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="appearance-popup">
+            <div class="appup">
+                <div class="toprow">
+                    <div class="appupbackbtn"><i class="fa-solid fa-arrow-left"></i></div>
+                    <div>Appearance</div>
+                </div>
+            </div>
+            <div class="appdown">
+                <div class="msg">Setting applies to this browser only</div>
+                <div class="option darkopt">
+                    <div class="tick"><i class="fa-solid fa-check"></i></div>
+                    <div>Dark</div>
+                </div>
+                <div class="option lightopt">
+                    <div class="tick"><i class="fa-solid fa-check" style="visibility: hidden;"></i></div>
+                    <div>Light</div>
+                </div>
+            </div>
+        </div>
+
         <button class="threeb2"><i class="fa-regular fa-circle-user"></i> Sign in</button>
         </div>
     </nav>
@@ -41,23 +67,23 @@
 
 
     <main>
-        <div class="leftsec">
+        <div class="leftsec mini">
             <div class="ls1 lsbox">
                 <div class="ls11"><i class="fa-solid fa-house"></i>Home</div>
                 <div class="ls11"><img src="img/ytshorts.png">Shorts</div>
                 <div class="ls11"><img src="img/ytsubs.png"> Subscriptions</div>
                 <div class="ls11"><i class="fa-regular fa-circle-user"></i>You</div>
-                <div class="ls11"><i class="fa-solid fa-clock-rotate-left"></i>History</div>
+                <div class="ls11 history"><i class="fa-solid fa-clock-rotate-left"></i>History</div>
             </div>
 
 
-            <div class="ls2 lsbox">
+            <div class="ls2 lsbox ">
                 <div class="ls21"><p>Sign in to like videos, comment, and subscribe.</p>
                 <button class="threeb2"><i class="fa-regular fa-circle-user"></i> Sign in</button></div>
             </div>
 
 
-            <div class="ls3 lsbox">
+            <div class="ls3 lsbox ">
                 <div class="ls31">
                     <h3>Explore</h3>
                 <div class="ls31c">
@@ -71,13 +97,13 @@
 
 
 
-            <div class="ls3 lsbox">
+            <div class="ls3 lsbox ">
                 <div class="ls31">
                     <h3>More from YouTube</h3>
                 <div class="ls31c">
-                    <div class="ls11"><img style="filter: invert(0);" src="img/youtube-color-icon.svg">YouTube Premium</div>
-                    <div class="ls11"><img style="filter: invert(0);" src="img/youtube-music-icon.svg">YouTube Music</div>
-                    <div class="ls11"><img style="filter: invert(0);" src="img/youtube-kids-icon.svg"> YouTube Kids</div>
+                    <div class="ls11"><img class="changeit" style="filter: invert(0);" src="img/youtube-color-icon.svg">YouTube Premium</div>
+                    <div class="ls11"><img class="changeit" style="filter: invert(0);" src="img/youtube-music-icon.svg">YouTube Music</div>
+                    <div class="ls11"><img class="changeit" style="filter: invert(0);" src="img/youtube-kids-icon.svg"> YouTube Kids</div>
                 </div>
                 </div>
             </div>
@@ -85,14 +111,14 @@
 
 
 
-            <div class="ls4 lsbox">
+            <div class="ls4 lsbox ">
                     <div class="ls11"><i class="fa-regular fa-flag"></i>Report history</div>
             </div>
 
 
 
             
-            <div class="ls2 ls61">
+            <div class="ls2 ls61 ">
                 <div class="ls21 ls610">
                     <div class="ls211">About</div>
                     <div class="ls212">Press</div>
@@ -106,7 +132,7 @@
 
 
 
-            <div class="ls2 ls61">
+            <div class="ls2 ls61 ">
                 <div class="ls21 ls610">
                     <div class="ls211">Terms</div>
                     <div class="ls212">Privacy</div>
@@ -117,7 +143,7 @@
             </div>
 
 
-            <div class="ls2 ls61">
+            <div class="ls2 ls61 ">
                 <div class="ls21 ls610" style="color: #717171;font-size: 12px;margin-bottom: 22px;">
                     <div class="ls211">© 2026 Google LLC</div>
                 </div>
@@ -140,7 +166,7 @@
 
         <div class="rightsec">
             <div class="tagsec">
-                <div class="sec">All</div>
+                <div class="sec clicked">All</div>
                 <div class="sec">Podcasts</div>
                 <div class="sec">Wickets</div>
                 <div class="sec">Gaming</div>
@@ -165,16 +191,16 @@
 
 <!-- Video -->
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(1)">
                     <div class="videobox">
-                        <video src="vid/2.mp4" controls preload="metadata"></video>
+                        <video src="vid/1.mp4" controls preload="metadata"></video>
                     </div>
 
                     <div class="text">
                         <div class="text1">
                         <div class="channellogo" style="background-image: url('img/img2.jpg');"></div>
                         <div class="details">
-                            <h3>Baki Hanma VS Kengan Ashura OP | Fly High by ATARASHII GAKKO! 
+                            <h3>Retsu's Unexpected Tricks | BAKI-DOU: The Invincible Samurai | Clip | Netflix Anime 
 </h3>
                             <p class="channel">
                                 Netflix Anime
@@ -191,9 +217,9 @@
                 </div>
                 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(2)">
                     <div class="videobox">
-                        <video src="vid/1.mp4" controls preload="metadata"></video>
+                        <video src="vid/2.mp4" controls preload="metadata"></video>
                     </div>
 
                     <div class="text">
@@ -218,7 +244,7 @@ Ezra Miller's Flash Meets Grant Gustin's Flash - Crisis On Infinite Earths - Arr
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(3)">
                     <div class="videobox">
                         <video src="vid/3.mp4" controls preload="metadata"></video>
                     </div>
@@ -244,7 +270,7 @@ Ezra Miller's Flash Meets Grant Gustin's Flash - Crisis On Infinite Earths - Arr
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(4)">
                     <div class="videobox">
                         <video src="vid/4.mp4" controls preload="metadata"></video>
                     </div>
@@ -269,7 +295,7 @@ Ezra Miller's Flash Meets Grant Gustin's Flash - Crisis On Infinite Earths - Arr
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(5)">
                     <div class="videobox">
                         <video src="vid/5.mp4" controls preload="metadata"></video>
                     </div>
@@ -295,7 +321,7 @@ Ezra Miller's Flash Meets Grant Gustin's Flash - Crisis On Infinite Earths - Arr
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(6)">
                     <div class="videobox">
                         <video src="vid/6.mp4" controls preload="metadata"></video>
                     </div>
@@ -321,7 +347,7 @@ Ezra Miller's Flash Meets Grant Gustin's Flash - Crisis On Infinite Earths - Arr
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(7)">
                     <div class="videobox">
                         <video src="vid/7.mp4" controls preload="metadata"></video>
                     </div>
@@ -347,7 +373,7 @@ Ezra Miller's Flash Meets Grant Gustin's Flash - Crisis On Infinite Earths - Arr
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(8)">
                     <div class="videobox">
                         <video src="vid/8.mp4" controls preload="metadata"></video>
                     </div>
@@ -372,7 +398,7 @@ Ezra Miller's Flash Meets Grant Gustin's Flash - Crisis On Infinite Earths - Arr
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(9)">
                     <div class="videobox">
                         <video src="vid/9.mp4" controls preload="metadata"></video>
                     </div>
@@ -398,7 +424,7 @@ Ezra Miller's Flash Meets Grant Gustin's Flash - Crisis On Infinite Earths - Arr
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(10)">
                     <div class="videobox">
                         <video src="vid/10.mp4" controls preload="metadata"></video>
                     </div>
@@ -424,7 +450,7 @@ Ezra Miller's Flash Meets Grant Gustin's Flash - Crisis On Infinite Earths - Arr
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(11)">
                     <div class="videobox">
                         <video src="vid/11.1.mp4" controls preload="metadata"></video>
                     </div>
@@ -450,7 +476,7 @@ Ezra Miller's Flash Meets Grant Gustin's Flash - Crisis On Infinite Earths - Arr
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(12)">
                     <div class="videobox">
                         <video src="vid/12.mp4" controls preload="metadata"></video>
                     </div>
@@ -476,7 +502,7 @@ Ezra Miller's Flash Meets Grant Gustin's Flash - Crisis On Infinite Earths - Arr
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(13)">
                     <div class="videobox">
                         <video src="vid/13.mp4" controls preload="metadata"></video>
                     </div>
@@ -502,7 +528,7 @@ Ezra Miller's Flash Meets Grant Gustin's Flash - Crisis On Infinite Earths - Arr
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(14)">
                     <div class="videobox">
                         <video src="vid/14.mp4" controls preload="metadata"></video>
                     </div>
@@ -528,7 +554,7 @@ Ezra Miller's Flash Meets Grant Gustin's Flash - Crisis On Infinite Earths - Arr
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(15)">
                     <div class="videobox">
                         <video src="vid/15.mp4" controls preload="metadata"></video>
                     </div>
@@ -554,7 +580,7 @@ Ezra Miller's Flash Meets Grant Gustin's Flash - Crisis On Infinite Earths - Arr
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(16)">
                     <div class="videobox">
                         <video src="vid/16.mp4" controls preload="metadata"></video>
                     </div>
@@ -581,7 +607,7 @@ Spider-Man vs Electro BUT in FULL Punjabi Dub😂🔥 | The Amazing Spider-Man 2
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(17)">
                     <div class="videobox">
                         <video src="vid/17.mp4" controls preload="metadata"></video>
                     </div>
@@ -607,7 +633,7 @@ Spider-Man vs Electro BUT in FULL Punjabi Dub😂🔥 | The Amazing Spider-Man 2
                 </div>
                 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(18)">
                     <div class="videobox">
                         <video src="vid/18.mp4" controls preload="metadata"></video>
                     </div>
@@ -633,7 +659,7 @@ Spider-Man vs Electro BUT in FULL Punjabi Dub😂🔥 | The Amazing Spider-Man 2
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(19)">
                     <div class="videobox">
                         <video src="vid/19.mp4" controls preload="metadata"></video>
                     </div>
@@ -659,7 +685,7 @@ Spider-Man vs Electro BUT in FULL Punjabi Dub😂🔥 | The Amazing Spider-Man 2
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(20)">
                     <div class="videobox">
                         <video src="vid/20.mp4" controls preload="metadata"></video>
                     </div>
@@ -686,7 +712,7 @@ Hot Food | POEM | The Hypnotiser | Kids' Poems and Stories With Michael Rosen
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(21)">
                     <div class="videobox">
                         <video src="vid/21.mp4" controls preload="metadata"></video>
                     </div>
@@ -712,7 +738,7 @@ Hot Food | POEM | The Hypnotiser | Kids' Poems and Stories With Michael Rosen
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(22)">
                     <div class="videobox">
                         <video src="vid/22.mp4" controls preload="metadata"></video>
                     </div>
@@ -738,7 +764,7 @@ Hot Food | POEM | The Hypnotiser | Kids' Poems and Stories With Michael Rosen
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(23)">
                     <div class="videobox">
                         <video src="vid/23.mp4" controls preload="metadata"></video>
                     </div>
@@ -764,7 +790,7 @@ Hot Food | POEM | The Hypnotiser | Kids' Poems and Stories With Michael Rosen
                 </div>
 
                 <div class="covering">
-                <div class="completebox">
+                <div class="completebox" onclick="openVideo(24)">
                     <div class="videobox">
                         <video src="vid/24.mp4" controls preload="metadata"></video>
                     </div>
@@ -797,4 +823,5 @@ Ugly Number || Leetcode - 263 || Java
         </div>
     </main>
 </body>
+<script src="app.js"></script>
 </html>
