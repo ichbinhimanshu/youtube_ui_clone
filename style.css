@@ -506,10 +506,47 @@ main{
     aspect-ratio: 16/9;
     display: flex;
     border-radius: 12px;
+    background-size: cover;
 }
 .videobox video{
     border-radius: 12px;
 }
+
+
+
+/* editing thumbnail in bg */
+.thumb1{background-image:url("vidthumb/1.jpg");}
+.thumb2{background-image:url("vidthumb/2.jpg");}
+.thumb3{background-image:url("vidthumb/3.jpg");}
+.thumb4{background-image:url("vidthumb/4.jpg");}
+.thumb5{background-image:url("vidthumb/5.jpg");}
+.thumb6{background-image:url("vidthumb/6.jpg");}
+.thumb7{background-image:url("vidthumb/7.jpg");}
+.thumb8{background-image:url("vidthumb/8.jpg");}
+.thumb9{background-image:url("vidthumb/9.jpg");}
+.thumb10{background-image:url("vidthumb/10.jpg");}
+.thumb11{background-image:url("vidthumb/11.jpg");}
+.thumb12{background-image:url("vidthumb/12.jpg");}
+.thumb13{background-image:url("vidthumb/13.jpg");}
+.thumb14{background-image:url("vidthumb/14.jpg");}
+.thumb15{background-image:url("vidthumb/15.jpg");}
+.thumb16{background-image:url("vidthumb/16.jpg");}
+.thumb17{background-image:url("vidthumb/17.jpg");}
+.thumb18{background-image:url("vidthumb/18.jpg");}
+.thumb19{background-image:url("vidthumb/19.jpg");}
+.thumb20{background-image:url("vidthumb/20.jpg");}
+.thumb21{background-image:url("vidthumb/21.jpg");}
+.thumb22{background-image:url("vidthumb/22.jpg");}
+.thumb23{background-image:url("vidthumb/23.jpg");}
+.thumb24{background-image:url("vidthumb/24.jpg");}
+
+
+
+
+
+
+
+
 
 .text{
     display: flex;
